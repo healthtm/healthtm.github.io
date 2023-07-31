@@ -1,0 +1,464 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /*background: linear-gradient(to right, rgb(134, 194, 231), rgb(232, 190, 219));*/
+    background: white;
+    margin-left: 20px; /* This adds a left margin. Adjust the value as needed. */
+    margin-right: 20px;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*background-color: linear-gradient(to right, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 0.5) 100%); */
+    background-color: white;
+    color: #000000;
+    padding: 0px;
+    margin-left: 10px; /* This adds a left margin. Adjust the value as needed. */
+    margin-right: 20px;
+}
+
+.header-logo {
+    height: 80px; /* Adjust according to your preference */
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-content h4 {
+    margin-bottom: 15px;
+}
+
+.footer-content .contact, 
+.footer-content .socials,
+.footer-content .quick-links,
+.footer-content .subscribe {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-content .subscribe form {
+    display: flex;
+    justify-content: start;
+}
+
+.footer-content .subscribe input {
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #dee2e6;
+}
+
+.footer-bottom img {
+    height: 50px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+
+.logo img {
+    height: 100px;
+}
+
+.contact {
+    float: right;
+}
+
+.banner {
+    position: relative;
+    text-align: center;
+    padding: 50px 0;
+}
+
+/*.banner img {
+    width: 100%;
+    height: auto;
+}*/
+
+.banner img {
+    height: auto; /* Adjust this value according to your needs */
+    width: 100%;
+    object-fit: contain; /* This will cover the entire width of the container while maintaining the image's aspect ratio */
+}
+
+.banner::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 0.5) 100%);
+    pointer-events: none;
+}
+
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.services .service {
+    /*background: linear-gradient(to right, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 0.5) 100%);*/
+    background: rgba(56, 92, 223, 0.485);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    color: #000000; 
+}
+
+
+.contact-form {
+    background-color: #ffffff;
+    margin: 40px;
+    padding: 40px;
+    border-radius: 40px;
+    color: rgb(8, 7, 7);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+.contact-form h2, .contact-form p {
+    text-align: center;
+}
+
+.contact-form form label {
+    display: block;
+    margin-bottom: 10px;
+    color: rgb(8, 7, 7);
+}
+
+.contact-form form input[type="text"], 
+.contact-form form input[type="email"], 
+.contact-form form input[type="tel"] {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid #d1d1d1;
+    font-size: 1em;
+}
+
+.contact-form form button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1em;
+}
+
+.contact-form form button:hover {
+    background-color: #0056b3;
+}
+
+
+.banner {
+    text-align: center;
+    padding: 0;
+}
+
+.banner img {
+    width: 100%;
+    height: 450px;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    color: #050505; /* Text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for better visibility */
+}
+
+.carousel-container {
+    display: flex; /* Aligns the child elements horizontally */
+    flex-wrap: nowrap; /* Prevents the child elements from wrapping onto multiple lines */
+}
+
+.carousel.slide {
+    flex-basis: 75%; /* Sets the base size of the carousel to 75% of the parent container's width */
+}
+
+.sidebar {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: column;
+    flex-basis: 25%; 
+    padding-left: 20px; 
+}
+
+
+.sidebar ul {
+    list-style-type: none; /* This removes the bullet points from the list */
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px 0; /* This adds 10px of padding to the top and bottom of each item */
+}
+
+.sidebar-content {
+    color: #000000; /* This changes the text color to black. Replace with any color you like. */
+    font-size: 18px; /* This increases the font size. Adjust the value as needed. */
+    text-align: left;
+}
+
+.sidebar-content h2 {
+    color: #e709c2; /* This changes the color of the headings */
+    font-size: 24px; /* This changes the font size of the headings */
+    text-align: left;
+    margin: 0 20px;
+}
+
+.sidebar-content li {
+    color: #750cd1; /* This changes the color of the list items */
+    font-size: 25px; /* This changes the font size of the list items */
+    text-align: left;
+    margin: 0 20px;
+}
+
+.try-now a {
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #007BFF;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-right: 30px;
+}
+.usp {
+    background-color: #f8fafb;
+    color: rgb(8, 7, 7);
+    padding: 20px;
+}
+
+.usp h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.usp .feature {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #c7aef0;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.usp .feature:hover {
+    transform: scale(1.05);
+}
+
+.usp .feature h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.usp .feature p {
+    font-size: 1em;
+}
+
+#survey-form {
+    width: 80%;
+    margin: 2em auto;
+    font-family: Arial, sans-serif;
+}
+
+#survey-form h2 {
+    text-align: center;
+    color: #333;
+}
+
+#survey-form p {
+    text-align: center;
+    color: #666;
+}
+
+#survey-form form {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 2em;
+}
+
+#survey-form label {
+    display: block;
+    margin: 1em 0 0.5em;
+}
+
+#survey-form textarea {
+    width: 100%;
+    min-height: 100px;
+    margin-bottom: 1em;
+    padding: 0.5em;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+#survey-form select {
+    width: 100%;
+    padding: 0.5em;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-bottom: 1em;
+}
+
+#survey-form button {
+    display: block;
+    margin: 1em auto;
+    padding: 1em 2em;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+#survey-form button:hover {
+    background-color: #0056b3;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    text-align: center;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.iframe-container {
+    background-color: #ffffff;
+    margin: 40px;
+    padding: 40px;
+    border-radius: 40px;
+    color: rgb(8, 7, 7);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.iframe-container h2 {
+    text-align: center;
+    color: rgb(8, 7, 7);
+}
+
+.iframe-container iframe {
+    width: 100%;
+    border: none;
+    height: 520px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid #d1d1d1;
+}
+
+.iframe-container2 {
+    background-color: #ffffff;
+    margin: 40px;
+    padding: 40px;
+    border-radius: 40px;
+    color: rgb(8, 7, 7);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.iframe-container2 h2 {
+    text-align: center;
+    color: rgb(8, 7, 7);
+}
+
+.iframe-container2 iframe {
+    width: 100%;
+    border: none;
+    height: 520px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid #d1d1d1;
+}
+img {
+    max-width: 100%;
+    height: auto;
+  }
+@media screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+    
+
+
+
+
+
+
+
